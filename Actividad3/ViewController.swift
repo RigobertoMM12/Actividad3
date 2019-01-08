@@ -26,41 +26,86 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         print("Prueba de comit");
         btcinco.layer.cornerRadius = 5
-        btcinco.layer.borderWidth = 1
+        btcinco.layer.borderWidth = 0
         btcinco.layer.borderColor = UIColor.black.cgColor
         btDiez.layer.cornerRadius = 5
-        btDiez.layer.borderWidth = 1
+        btDiez.layer.borderWidth = 0
         btDiez.layer.borderColor = UIColor.black.cgColor
         btQuince.layer.cornerRadius = 5
-        btQuince.layer.borderWidth = 1
+        btQuince.layer.borderWidth = 0
         btQuince.layer.borderColor = UIColor.black.cgColor
         
         btVeinte.layer.cornerRadius = 5
-        btVeinte.layer.borderWidth = 1
+        btVeinte.layer.borderWidth = 0
         btVeinte.layer.borderColor = UIColor.black.cgColor
         btbinCinco.layer.cornerRadius = 5
-        btbinCinco.layer.borderWidth = 1
+        btbinCinco.layer.borderWidth = 0
         btbinCinco.layer.borderColor = UIColor.black.cgColor
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     @IBAction func btnDiez(_ sender: UIButton) {
         porcentaje = 0.10;
+        btcinco.layer.borderWidth = 0
+        
+        btDiez.layer.borderWidth = 1
+        
+        btQuince.layer.borderWidth = 0
+        
+        btVeinte.layer.borderWidth = 0
+        
+        btbinCinco.layer.borderWidth = 0
     }
     @IBAction func btnCinco(_ sender: UIButton) {
         porcentaje = 0.05;
+        btcinco.layer.borderWidth = 1
+        
+        btDiez.layer.borderWidth = 0
+        
+        btQuince.layer.borderWidth = 0
+        
+        btVeinte.layer.borderWidth = 0
+        
+        btbinCinco.layer.borderWidth = 0
        
     }
     
     @IBAction func btnQuince(_ sender: UIButton) {
         porcentaje = 0.15
+        btcinco.layer.borderWidth = 0
+        
+        btDiez.layer.borderWidth = 0
+        
+        btQuince.layer.borderWidth = 1
+        
+        btVeinte.layer.borderWidth = 0
+        
+        btbinCinco.layer.borderWidth = 0
     }
     @IBAction func btnVeinte(_ sender: Any) {
         porcentaje = 0.20;
+        btcinco.layer.borderWidth = 0
+        
+        btDiez.layer.borderWidth = 0
+        
+        btQuince.layer.borderWidth = 0
+        
+        btVeinte.layer.borderWidth = 1
+        
+        btbinCinco.layer.borderWidth = 0
     }
     
     @IBAction func btnbinCinco(_ sender: Any) {
-         porcentaje = 0.20;
+         porcentaje = 0.25;
+        btcinco.layer.borderWidth = 0
+        
+        btDiez.layer.borderWidth = 0
+        
+        btQuince.layer.borderWidth = 0
+        
+        btVeinte.layer.borderWidth = 0
+        
+        btbinCinco.layer.borderWidth = 1
     }
     @IBAction func btnCalcular(_ sender: UIButton) {
         if(txtinpFactura.text  != ""){
