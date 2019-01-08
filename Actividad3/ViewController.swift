@@ -34,6 +34,11 @@ class ViewController: UIViewController {
         porcentaje = 0.20;
     }
     @IBAction func btnCalcular(_ sender: UIButton) {
+        let monto = Double(txtinpFactura.text!);
+        txtTotalPropina.text = String(monto!*porcentaje);
+        var gTotal  = monto! * porcentaje;
+        gTotal = gTotal + monto!;
+        txtTotalTotal.text = String( gTotal )
     }
 }
 
