@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,72 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Actividad3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculadora Propinas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpR-yk-aBi">
+                                <rect key="frame" x="22" y="39" width="337" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="phD-60-Qee"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="0.090619235610000001" green="0.40159488339999999" blue="0.17902512940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingresa el monto de la factura" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GtI-7s-VG9">
+                                <rect key="frame" x="0.0" y="111" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onf-oJ-2ef">
+                                <rect key="frame" x="73" y="175" width="30" height="30"/>
+                                <state key="normal" title="5%"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vR-6h-2YF">
+                                <rect key="frame" x="124" y="175" width="30" height="30"/>
+                                <state key="normal" title="10%"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwj-8X-T9f">
+                                <rect key="frame" x="168" y="175" width="30" height="30"/>
+                                <state key="normal" title="15%"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQf-YH-Pq2">
+                                <rect key="frame" x="206" y="175" width="31" height="30"/>
+                                <state key="normal" title="20%"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WqI-Vv-6KR">
+                                <rect key="frame" x="245" y="175" width="31" height="30"/>
+                                <state key="normal" title="25%"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZpR-yk-aBi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="39o-Sz-tV2"/>
+                            <constraint firstItem="WqI-Vv-6KR" firstAttribute="leading" secondItem="lQf-YH-Pq2" secondAttribute="trailing" constant="8" symbolic="YES" id="7bD-GQ-pS7"/>
+                            <constraint firstItem="WqI-Vv-6KR" firstAttribute="top" secondItem="GtI-7s-VG9" secondAttribute="bottom" constant="34" id="BdP-pQ-RLg"/>
+                            <constraint firstItem="5vR-6h-2YF" firstAttribute="top" secondItem="GtI-7s-VG9" secondAttribute="bottom" constant="34" id="Bpi-KE-17T"/>
+                            <constraint firstItem="bwj-8X-T9f" firstAttribute="top" secondItem="GtI-7s-VG9" secondAttribute="bottom" constant="34" id="FnD-wF-Zqv"/>
+                            <constraint firstItem="bwj-8X-T9f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="168" id="K9T-44-GPk"/>
+                            <constraint firstItem="GtI-7s-VG9" firstAttribute="top" secondItem="ZpR-yk-aBi" secondAttribute="bottom" constant="24" id="Nca-yG-gW8"/>
+                            <constraint firstItem="onf-oJ-2ef" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="Otw-YI-eYJ"/>
+                            <constraint firstItem="GtI-7s-VG9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rl1-Nc-DGD"/>
+                            <constraint firstItem="bwj-8X-T9f" firstAttribute="leading" secondItem="5vR-6h-2YF" secondAttribute="trailing" constant="14" id="Z9f-gD-HDE"/>
+                            <constraint firstItem="ZpR-yk-aBi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="aFK-P1-mjP"/>
+                            <constraint firstItem="lQf-YH-Pq2" firstAttribute="leading" secondItem="bwj-8X-T9f" secondAttribute="trailing" constant="8" symbolic="YES" id="eaF-v8-XrZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GtI-7s-VG9" secondAttribute="trailing" id="lVf-Mk-vAV"/>
+                            <constraint firstItem="onf-oJ-2ef" firstAttribute="top" secondItem="GtI-7s-VG9" secondAttribute="bottom" constant="34" id="s2x-a6-0XK"/>
+                            <constraint firstItem="ZpR-yk-aBi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sBb-Oi-z7b"/>
+                            <constraint firstItem="lQf-YH-Pq2" firstAttribute="top" secondItem="GtI-7s-VG9" secondAttribute="bottom" constant="34" id="whT-Vs-xb8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
