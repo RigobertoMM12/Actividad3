@@ -35,21 +35,33 @@
                                 <rect key="frame" x="73" y="225" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="5%"/>
+                                <connections>
+                                    <action selector="btnCinco:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BEw-3h-WMo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vR-6h-2YF">
                                 <rect key="frame" x="124" y="225" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="10%"/>
+                                <connections>
+                                    <action selector="btnDiez:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ddu-i3-Jdh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwj-8X-T9f">
                                 <rect key="frame" x="168" y="225" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="15%"/>
+                                <connections>
+                                    <action selector="btnQuince:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wU4-5p-Hl5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQf-YH-Pq2">
                                 <rect key="frame" x="206" y="225" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="20%"/>
+                                <connections>
+                                    <action selector="btnVeinte:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mTE-uk-ge3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WqI-Vv-6KR">
                                 <rect key="frame" x="245" y="225" width="31" height="30"/>
@@ -60,6 +72,9 @@
                                 <rect key="frame" x="237" y="491" width="122" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Calcular"/>
+                                <connections>
+                                    <action selector="btnCalcular:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zy7-Q0-Z1e"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total de Propina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAd-Qe-Zvj">
                                 <rect key="frame" x="97" y="320" width="124" height="20.5"/>
@@ -93,6 +108,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="txtTotalPropina" destination="p3s-yv-kHF" id="ZGh-89-vkC"/>
+                        <outlet property="txtTotalTotal" destination="rnd-QW-arL" id="Rup-f9-yaX"/>
+                        <outlet property="txtinpFactura" destination="GtI-7s-VG9" id="Qtx-io-ju3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
