@@ -34,7 +34,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onf-oJ-2ef">
                                 <rect key="frame" x="73" y="225" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="5%"/>
+                                <state key="normal" title="5%">
+                                    <color key="titleShadowColor" red="0.090619235610000001" green="0.40159488339999999" blue="0.17902512940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnCinco:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BEw-3h-WMo"/>
                                 </connections>
@@ -67,6 +72,15 @@
                                 <rect key="frame" x="245" y="225" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="25%"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="borderWidth">
+                                        <size key="value" width="1" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnbinCinco:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1CB-qb-SZ3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNH-bb-1uC">
                                 <rect key="frame" x="237" y="491" width="122" height="30"/>
@@ -76,15 +90,8 @@
                                     <action selector="btnCalcular:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zy7-Q0-Z1e"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total de Propina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAd-Qe-Zvj">
-                                <rect key="frame" x="97" y="320" width="124" height="20.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total a pagar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQE-Bf-8ST">
-                                <rect key="frame" x="122" y="357.5" width="99" height="21.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total de Propina: $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAd-Qe-Zvj">
+                                <rect key="frame" x="81" y="320" width="160" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -104,11 +111,31 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXh-JE-KZY">
+                                <rect key="frame" x="32" y="428" width="308" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total a pagar:  $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQE-Bf-8ST">
+                                <rect key="frame" x="100" y="357" width="132" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="btDiez" destination="5vR-6h-2YF" id="km5-6g-AFP"/>
+                        <outlet property="btQuince" destination="bwj-8X-T9f" id="BLb-vx-f7m"/>
+                        <outlet property="btVeinte" destination="lQf-YH-Pq2" id="8NO-lh-rqh"/>
+                        <outlet property="btbinCinco" destination="WqI-Vv-6KR" id="B3i-Xd-Dcj"/>
+                        <outlet property="btcinco" destination="onf-oJ-2ef" id="jkU-j0-eci"/>
+                        <outlet property="lblErrores" destination="bXh-JE-KZY" id="1pN-4s-W5p"/>
                         <outlet property="txtTotalPropina" destination="p3s-yv-kHF" id="ZGh-89-vkC"/>
                         <outlet property="txtTotalTotal" destination="rnd-QW-arL" id="Rup-f9-yaX"/>
                         <outlet property="txtinpFactura" destination="GtI-7s-VG9" id="Qtx-io-ju3"/>
